@@ -1,0 +1,205 @@
+/*Style guide*/
+
+/**
+ * normal: #ccc;
+ * dark: #131f21 @alpha 0.95;
+ * base-size: 16px;
+ * blue: #2584B3;
+ * highlight: #48A4D2;
+ **/
+
+/*CSS Reset to remove all styling and remove browser inconistencies*/
+
+@import url(./reset.css);
+
+/*Import fonts and icons*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,
+    400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700);
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+/*Responsive*/
+
+@import url(./responsive.css);
+
+/* Basic styles*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+a, a:visited, a:focus, a:active {
+    text-decoration: none;
+}
+
+a {
+    color: #ccc;
+    transition: color 0.25s linear;
+}
+
+a:hover {
+    color: #48A4D2;
+}
+
+/* Icons */
+
+.icon {
+    text-rendering: geometricPrecision;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color 0.25s linear;
+}
+
+.icon:hover {
+    color: #fff;
+}
+
+html {
+    height: 100%;    
+    /*declare a font size so we can use rem (relative to root element) units*/
+    font-size: 16px;
+}
+
+body {
+    /*widths and heights*/
+    width: 100%;
+    min-height: 100%;
+    padding: 100px 0;
+    
+    /*colors and fonts*/
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ccc;
+
+    /*typography*/
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1.6;
+    
+    /*alignment and display*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #131f21;
+    background-size: 100%;
+}
+
+.container {
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #131f21;
+    transition: all 0.25s linear;
+}
+
+header nav ul li.current {
+    border-bottom: 1px solid #2584B3;
+    color: #ccc;
+}
+
+header nav ul li:hover {
+    color: #2584B3;
+    border-color: #2584B3;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+/*Section – Main*/
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.name-section {
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 300;
+}
+
+.name-section .name,
+.name-section .tagline {
+    display: flex;
+    justify-content: center;
+}
+
+.name-section .name {
+    font-size: 3rem;
+}
+
+.name-section .tagline {
+    font-size: 1.5rem;
+}
+
+.main p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.photo {
+    max-width: 200px;
+    background-size: 100px 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 1px;
+    box-shadow: 0px 1px 5px 0 #ccc;
+    margin-bottom: 4rem;
+}
+
+ul.list {
+    list-style-type: disc;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li {
+    margin-right: 1rem;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+

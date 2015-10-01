@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        margin: 20px;
+    }
+}
