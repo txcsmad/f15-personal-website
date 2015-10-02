@@ -58,12 +58,11 @@ a:hover {
 html {
     height: 100%;    
     /*declare a font size so we can use rem (relative to root element) units*/
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
     /*widths and heights*/
-    width: 100%;
     min-height: 100%;
     padding: 100px 0;
     
@@ -154,10 +153,12 @@ header nav ul li:last-child {
 .name-section .tagline {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .name-section .name {
     font-size: 3rem;
+    line-height: 1;
 }
 
 .name-section .tagline {
