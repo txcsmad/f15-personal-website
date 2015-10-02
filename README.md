@@ -10,7 +10,13 @@ The website is built with vanilla HTML and CSS. The primary font faces used are 
 
 * What do the `<meta>` tags in the `<header>` do?
 
-TODO
+````html
+<meta charset="utf-8"> <!-- set the encoding (recommended) -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- define the viewport and how it should fit in the device's screen (recommended) -->
+<meta name="description" content="The personal webpage of Keanue Reeves"> <!-- the description that shows up in search engines -->
+<meta name="HandheldFriendly" content="True"> <!-- tells search engines that the site is designed for smaller screens too -->
+<meta name="MobileOptimized" content="320">
+````
 
 # Hosting using GitHub Pages
 
